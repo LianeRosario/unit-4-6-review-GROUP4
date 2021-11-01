@@ -103,7 +103,7 @@ ___ <- tibble::tibble(
 
 #### Member 1
 
-```{r merge-two-vectors, eval = F}
+```{r merge-two-vectors, eval = T}
 classes <- tibble::tibble(
   "month_name" = month_name,
   "classes_in_session" = classes_in_session
