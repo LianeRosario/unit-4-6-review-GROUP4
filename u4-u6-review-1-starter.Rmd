@@ -48,7 +48,12 @@ Add your code here.
 
 #### Member 4
 
-Add your code here.
+```{r zodiac-vector}
+
+zodiac <- c("Capricorn", "Aquarius", "Pisces", "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo", "Libra", "Scorpio", "Sagittarius")
+
+```
+
 
 #### Member 5
 
