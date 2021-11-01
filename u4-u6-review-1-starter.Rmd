@@ -167,7 +167,25 @@ Add your code here.
 
 #### Member 5
 
-Add your code here.
+```{r month-names-days-plot-member-five}
+month_days %>% 
+  mutate(month_name = fct_relevel(month_name,
+                            "January",
+                            "February",
+                            "March",
+                            "April",
+                            "May",
+                            "June",
+                            "July",
+                            "August",
+                            "September",
+                            "October",
+                            "November",
+                            "December")) %>% 
+  ggplot(aes(x = month_name, y= month_days))+
+  geom_point()
+```
+
 
 ## Exercise 4 - Join all the data frames, filter randomly, and over-write vector
 
