@@ -55,7 +55,20 @@ classes_in_session <- c(T,
 
 #### Member 2
 
-Add your code here.
+``` {r month-percip-vector}
+month_percip <- c("snow",
+                  "snow",
+                  "snow",
+                  "rain",
+                  "rain",
+                  "rain",
+                  "rain",
+                  "rain",
+                  "rain",
+                  "rain",
+                  "snow",
+                  "snow")
+```
 
 #### Member 3
 
