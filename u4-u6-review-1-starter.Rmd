@@ -52,7 +52,10 @@ Add your code here.
 
 #### Member 5
 
-Add your code here.
+```{r member-5-months-days-vector}
+common_days <- c(31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31)
+```
+
 
 ## Exercise 2 - Combine into a data frame
 
