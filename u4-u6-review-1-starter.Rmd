@@ -36,7 +36,21 @@ month_name <- c("January",
 
 #### Member 1
 
-Add your code here.
+```{r}
+classes_in_session <- c(T,
+                        T,
+                        T,
+                        T,
+                        T,
+                        F,
+                        F,
+                        T,
+                        T,
+                        T,
+                        T,
+                        T)
+```
+
 
 #### Member 2
 
