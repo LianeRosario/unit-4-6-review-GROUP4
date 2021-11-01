@@ -182,7 +182,32 @@ Add your code here.
 
 #### Member 3
 
-Add your code here.
+```{r create-month-temp-plot, eval=T}
+month_temp %>%
+  ggplot(aes(x = month_name, y = temperature_f)) +
+  geom_point()
+```
+```{r fix-month-levels, eval=T}
+month_temp %>%
+  mutate(month_name = fct_relevel(month_name,
+                                  "January",
+                                  "February",
+                                  "March",
+                                  "April",
+                                  "May",
+                                  "June",
+                                  "July",
+                                  "August",
+                                  "September",
+                                  "October",
+                                  "November",
+                                  "December")) %>%
+
+ ggplot(aes(x = month_name, y = temperature_f)) +
+  geom_point()
+```
+
+
 
 #### Member 4
 
