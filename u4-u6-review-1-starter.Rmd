@@ -103,7 +103,12 @@ ___ <- tibble::tibble(
 
 #### Member 1
 
-Add your code here.
+```{r merge-two-vectors, eval = T}
+classes <- tibble::tibble(
+  "month_name" = month_name,
+  "classes_in_session" = classes_in_session
+)
+```
 
 #### Member 2
 
