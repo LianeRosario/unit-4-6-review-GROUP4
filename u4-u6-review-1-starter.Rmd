@@ -134,7 +134,13 @@ Add your code here.
 
 #### Member 5
 
-Add your code here.
+```{r month-days-merge}
+month_days <- tibble::tibble(
+  "month_name" = month_name,
+  "month_days" = common_days
+)
+```
+
 
 ## Exercise 3 - Try plotting with `month_name` on the x axis, then recode factors
 
