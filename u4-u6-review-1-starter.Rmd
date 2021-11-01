@@ -116,7 +116,12 @@ Add your code here.
 
 #### Member 3
 
-Add your code here.
+```{r merge-month-temp, eval = T}
+month_temp <- tibble::tibble(
+  "month_name" = month_name,
+  "temperature_f" = temperature_f
+)
+```
 
 #### Member 4
 
