@@ -151,7 +151,30 @@ month_days <- tibble::tibble(
 
 #### Member 1
 
-Add your code here.
+```{r month_temp_plot}
+month_temp %>%
+  ggplot(aes(month_name, temperature_f)) +
+  geom_point()
+```
+
+```{r month_temp_plot_releveled}
+month_temp %>%
+  mutate(month_name = fct_relevel(month_name, "January",
+                                  "February",
+                                  "March",
+                                  "April",
+                                  "May",
+                                  "June",
+                                  "July",
+                                  "August",
+                                  "September",
+                                  "October",
+                                  "November",
+                                  "December")) %>%
+  ggplot(aes(month_name, temperature_f)) +
+  geom_point()
+```
+
 
 #### Member 2
 
