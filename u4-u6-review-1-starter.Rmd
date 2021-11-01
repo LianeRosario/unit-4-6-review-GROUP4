@@ -107,7 +107,12 @@ Add your code here.
 
 #### Member 2
 
-Add your code here.
+```{r merge-my-vector-with-month}
+ month_precipitation <- tibble::tibble(
+  "month_name" = month_name,
+  "month_percip" = month_percip
+)
+```
 
 #### Member 3
 
