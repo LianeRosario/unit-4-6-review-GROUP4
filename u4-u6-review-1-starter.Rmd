@@ -278,7 +278,20 @@ Add your code here.
 
 #### Member 3
 
-Add your code here.
+```{r join-characteristics, eval=T}
+df_liane <- month_days %>%
+left_join(month_temp) %>%
+left_join(month_zodiac) %>%
+left_join(month_precipitation) %>%
+left_join(classes)
+```
+```{r filter-months, eval=T}
+df_liane %>%
+  filter(month_name == c("January", "February", "March", "April", "May", "June", "July", "August", "September", "October"))
+
+temperature_f <- pull(df_liane)
+```
+
 
 #### Member 4
 
